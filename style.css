@@ -1,10 +1,16 @@
-.form,
-.greetings {
-  display: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.showing {
-  display: block;
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 @keyframes fadeIn {
@@ -24,4 +30,13 @@
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
 }
