@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.div1 {
+  background-color: aqua;
+}
+
+.div2 {
+  background-color: blue;
+}
+
+.div3 {
+  background-color: brown;
+}
+
+.div4 {
+  background-color: coral;
+}
+
+.div5 {
+  background-color: springgreen;
+}
