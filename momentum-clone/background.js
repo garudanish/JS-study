@@ -12,7 +12,6 @@ function paintImage(imgNumber) {
 
 function genRandom() {
   const number = Math.floor(Math.random() * 5);
-  console.log(number);
   return number;
 }
 
