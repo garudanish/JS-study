@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+input:active,
+input:focus {
+  outline: none;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -28,13 +33,76 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.black-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  background-color: black;
+}
+
+.js-title {
+  font-size: 150px;
+  text-shadow: 1px 1px 10px black;
+  line-height: 0.8;
 }
 
 .form,
 .greetings {
   display: none;
+  margin-bottom: 30px;
+}
+
+.form input,
+.greetings,
+.js-toDoForm input {
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  background-color: transparent;
+  text-shadow: 1px 1px 10px black;
+  font-weight: 400;
+}
+
+.form input {
+  margin-bottom: 30px;
+}
+
+.form input,
+.js-toDoForm input {
+  border-bottom: 3px solid white;
+}
+
+.js-toDoForm input {
+  width: 350px;
+}
+
+.form input::placeholder,
+.js-toDoForm input::placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 10px black;
+}
+
+input:active::placeholder,
+input:focus::placeholder {
+  color: transparent;
+  text-shadow: none;
+}
+
+.js-weather {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 20px;
 }
 
 .showing {
