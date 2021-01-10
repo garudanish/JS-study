@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-input:active,
-input:focus {
-  outline: none;
-}
-
 body {
   height: 100vh;
   display: flex;
@@ -16,6 +11,21 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+input:active,
+input:focus {
+  outline: none;
 }
 
 @keyframes fadeIn {
@@ -51,7 +61,6 @@ body {
 .js-title {
   font-size: 150px;
   text-shadow: 1px 1px 10px black;
-  line-height: 0.8;
 }
 
 .form,
@@ -66,14 +75,19 @@ body {
   border: none;
   text-align: center;
   color: white;
-  font-size: 50px;
   background-color: transparent;
   text-shadow: 1px 1px 10px black;
   font-weight: 400;
 }
 
-.form input {
+.form input,
+.greetings {
+  font-size: 50px;
   margin-bottom: 30px;
+}
+
+.js-toDoForm input {
+  font-size: 30px;
 }
 
 .form input,
@@ -81,12 +95,7 @@ body {
   border-bottom: 3px solid white;
 }
 
-.js-toDoForm input {
-  width: 350px;
-}
-
-.form input::placeholder,
-.js-toDoForm input::placeholder {
+input::placeholder {
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 1px 1px 10px black;
@@ -96,6 +105,19 @@ input:active::placeholder,
 input:focus::placeholder {
   color: transparent;
   text-shadow: none;
+}
+
+.js-toDoList {
+  margin-top: 15px;
+}
+
+.js-toDoList li {
+  font-size: 25px;
+  text-shadow: 1px 1px 10px black;
+}
+
+.js-toDoList button {
+  font-size: 25px;
 }
 
 .js-weather {
